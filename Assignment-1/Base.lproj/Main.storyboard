@@ -22,7 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94.333333333333343" id="k1w-no-JYo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -117,7 +117,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="DbE-cZ-ZGu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="X">
+                                <buttonConfiguration key="configuration" style="filled" title="x">
                                     <color key="baseBackgroundColor" red="0.79288820879999999" green="0.56887543360000004" blue="0.20811538590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>

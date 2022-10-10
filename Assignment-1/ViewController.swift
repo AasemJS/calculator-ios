@@ -1,9 +1,15 @@
 //  ViewController.swift
 //
 //  Calculator 2 - A simple calculator app
-//  V 1.0
+//  V 1.1
 //  Design created by Group 25
-//  on 05 October 2022
+//  on 25th September 2022
+//
+//  Functionality added
+//  on 9th October 2022
+//
+//  Course - iOS Development
+//  Centennial College - MAPD714 F22
 //
 //  Group Members
 //  Murtuza Haider Naqvi- 301289355
@@ -14,7 +20,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //function to display result
+    //  Label to display the result
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad()
@@ -22,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    //function for numbers buttons
+    //  Function for input variables
     @IBAction func numberBtn(_ sender: UIButton) {
         
         let button = sender as UIButton
@@ -43,7 +49,7 @@ class ViewController: UIViewController {
         }
     }
     
-    // function for operators
+    // Functionality for operators
     @IBAction func operatorBtn(_ sender: UIButton) {
         let operation = sender as UIButton
         let operationText = operation.titleLabel!.text
@@ -66,7 +72,7 @@ class ViewController: UIViewController {
         
     }
     
-    // function for clear and delete
+    // Function to clear display and delete input
     @IBAction func addOnBtn(_ sender: UIButton) {
         
         let delButton = sender as UIButton
@@ -89,9 +95,9 @@ class ViewController: UIViewController {
         }
     }
     
-    // functions for calculationss
+    // Function for calculating the string
     func doCalculation(x: String) -> String{
-        let operands:[Character] = ["+","-","X","/","%"]
+        let operands:[Character] = ["+","-","x","/","%"]
         var lhs:String = ""
         var operand = [String]()
         var nums = [String]()
@@ -147,7 +153,7 @@ class ViewController: UIViewController {
                         res = v1-v2
                     }
                 }
-                case("X"):
+                case("x"):
                 if let v1 = n1{
                     if let v2 = n2{
                         res = v1*v2
@@ -169,8 +175,7 @@ class ViewController: UIViewController {
             }
         return String(res);
     }
-
-    
 }
+// End of program
 
 
